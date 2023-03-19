@@ -1,0 +1,54 @@
+
+
+1. 添加房客
+2. 删除房客
+3. 添加房间
+4. 房间排序-按照房间价格
+5. 保存状态
+6. 读取状态
+===================================================
+宾馆入住管理系统
+管理系统文件
+
+
+房间，
+查看房间
+增加房间
+删除房间
+办理入住
+办理退房
+房间排序
+保存房间
+加载房间
+退出系统
+
+关键词 房号 房间类型 价格 入住人名字
+房间状态 未入住 已入住 打扫中
+入住人电话 入住人身份证 入住天数 入住时间
+客户，住的天数
+========================================================
+要操作的数据如
+rooms: LinkedList<Room>; Room(RoomNUM, RoomType, price);
+customers: LinkedList<Customer>; Customer(String name, String id,String phone,	int datesIn, Date dateStart=new Date();)
+customersbyID: Map<String, Customer> : String -> Customer
+roomsbyRoomNUM: map:roomNum -> room
+roomsNUM: Hash
+CuIDtoRoomID： map: customerid -> roomNUM
+statesOfRooms: map roomNUM -> roomstate
+eventList: LinkedList: CustomerEvent
+
+
+room field roomNum, roomType, price
+customer field name, id, phone, datesIn, dateStart
+
+eventList: CustomerMoveIn, CustomerMoveOut
+
+1. 客人订房
+2. 客人入住
+3. 客人退房
+4. 管理员添加房间
+5. 管理员查询房间
+6. 管理员罗列房间
+7. 管理员保存系统状态
+8. 管理员加载系统状态
+9. 管理员退出系统
